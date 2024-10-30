@@ -1,0 +1,7 @@
+Picasso Server started. Listening for client requests
+Request from Client 0 with Command 1:Get Client Id
+Request from Client 0 with Command 32:Set Server Setting
+The constants now are 1 false
+Request from Client 0 with Command 32:Set Server Setting
+The constants now are 1 false
+Request from Client 1 with Command 15:Get QTD Names

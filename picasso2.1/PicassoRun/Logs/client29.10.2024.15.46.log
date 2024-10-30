@@ -1,0 +1,9 @@
+ServerName localhost Port 4444
+ Message 1:Get Client Id sent to Server localhost
+ Message 32:Set Server Setting sent to Server localhost
+Message 1:Get Client Id received from Server; Status: &MSG=END
+ Message 32:Set Server Setting sent to Server localhost
+Message 4: received from Server; Status: Setting Set
+Message 4: received from Server; Status: Setting Set
+ Message 15:Get QTD Names sent to Server localhost
+Message 2: received from Server; Status: Failed to connect to database engine
