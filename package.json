@@ -6,7 +6,8 @@
   "scripts": {
     "start": "concurrently \"cd ./frontend && yarn start\" \"cd ./backend && poetry run flask run\"",
     "start-api": "cd ./backend && poetry run flask run",
-    "start-frontend": "cd ./frontend && yarn start"
+    "start-frontend": "cd ./frontend && yarn start",
+    "build": "cd ./frontend && yarn build"
   },
   "dependencies": {
     "concurrently": "^5.3.0",
