@@ -1,5 +1,0 @@
-to run frontend client seamlessly :
-1) activate server first with a .env file created under backend
-2) use node -v of 16 strictly (nvm use 16 before npm start / yarn start / npm run dev)
-3) npm run dev
-4) to start postgreSQL, do : brew services restart postgresql@14
