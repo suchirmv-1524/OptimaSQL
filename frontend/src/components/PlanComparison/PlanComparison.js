@@ -68,7 +68,7 @@ const PlanComparison = (props) => {
       {getData()}
     </div> :
     <div className={styles.comparisonLoadingWrapper}>
-      <span>No data to show</span>
+      <span>No data to show :(</span>
     </div>
   )
 }

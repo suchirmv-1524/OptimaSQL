@@ -1,13 +1,11 @@
 {
-  "name": "sql-query-optimizer",
+  "name": "database-and-query-optimizer",
   "version": "1.0.0",
-  "repository": "https://github.com/chenningg/sql-query-optimizer.git",
-  "author": "Chen Ning <chenningg97@gmail.com>",
-  "license": "MIT",
+  "repository": "https://github.com/suchirmv-1524/Database-And-Query-Optimisation.git",
   "private": true,
   "scripts": {
-    "start": "concurrently \"cd ./frontend && yarn start\" \"cd ./api && poetry run flask run\"",
-    "start-api": "cd ./api && poetry run flask run",
+    "start": "concurrently \"cd ./frontend && yarn start\" \"cd ./backend && poetry run flask run\"",
+    "start-api": "cd ./backend && poetry run flask run",
     "start-frontend": "cd ./frontend && yarn start"
   },
   "dependencies": {

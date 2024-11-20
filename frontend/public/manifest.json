@@ -3,17 +3,17 @@
   "name": "SQL Query Optimization Visualizer",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "db.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "favicon-192.png",
+      "src": "db.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "favicon-512.png",
+      "src": "db.png",
       "type": "image/png",
       "sizes": "512x512"
     }

@@ -99,7 +99,7 @@ const FormOutput = (props) => {
     // No data message output
     else if (!props.output["data"].hasOwnProperty(0)) {
       return (
-        <p>No plans available. Please send a query first.</p>
+        <p>No plans available. Please send a query first !</p>
       )
     }
     // There is only one plan, which is the plan that the DBMS returns for the specified query. i.e. no valid predicates selected
@@ -137,7 +137,7 @@ const FormOutput = (props) => {
     // Handle edge cases if any
     else {
       return (
-        <p>An unknown error occured. Please hit up Chuan Xin! ((:</p>
+        <p>An unknown error occured. Please try again.</p>
       )
     }
   }
@@ -180,7 +180,7 @@ const FormOutput = (props) => {
         </div>
       </div> : ""}
 
-      <h1 className={styles.outputHeader}>Compare Plans</h1>
+      <h2 className={styles.outputHeader}>Compare Query Execution Plans</h2>
       <p>Select two query execution plans to compare. We compare based on the cost per row - the total estimated cost of the query plan divided by the number of rows returned. We recognize that as the selectivity varies, the cost naturally varies. Therefore our metric allows us to normalize and compare across various selectivities somewhat fairly in a heuristic manner. The lower this value is, the better.</p>
       <p>In the comparison, we also show each plan's predicate attributes, as well as the value that they have been varied to and the corresponding selectivity.</p>
       <p>We also provide a graph of the query plan's execution, and a natural langauge explanation. Click on the nodes in the graph for more information about each node.</p>
@@ -202,13 +202,13 @@ const FormOutput = (props) => {
       <hr />
       <Form.Row>
         <Form.Group as={Col} controlId="formPlanSelector1">
-          <Form.Label><b>Select plan:</b></Form.Label>
+          <Form.Label><b>Select plan :</b></Form.Label>
           <Form.Control as="select" value={planSelected[0]} onChange={(event) => {handleSelect(0, event)}}>
             {renderAlternativeSelector()}
           </Form.Control>
         </Form.Group>
         <Form.Group as={Col} controlId="formPlanSelector2">
-          <Form.Label><b>Select plan:</b></Form.Label>
+          <Form.Label><b>Select plan :</b></Form.Label>
           <Form.Control as="select" value={planSelected[1]} onChange={(event) => {handleSelect(1, event)}}>
             {renderAlternativeSelector()}
           </Form.Control>
@@ -234,7 +234,7 @@ const FormOutput = (props) => {
         </Form.Group>
       </Form.Row>
       <h3 style={{ textAlign: "center" }}>Explanations</h3>
-      <p style={{ textAlign: "center" }}>Text explanation of the QEP, much like Neuron.</p>
+      <p style={{ textAlign: "center" }}>Text explanation of the Execution Plans chosen</p>
       <hr />
       <Form.Row>
         <Form.Group as={Col} controlId="formExplanation1">

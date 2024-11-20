@@ -149,7 +149,7 @@ const FormInput = () => {
           <div className={styles.toastWrapper}>
             <Toast bsPrefix={styles.toastError} animation={true} autohide={true} delay={3000} onClose={() => {setShowPredicateWarning(false)}} show={showPredicateWarning}>
               <Toast.Header bsPrefix={styles.toastHeader}>Too many predicates!</Toast.Header>
-              <Toast.Body bsPrefix={styles.toastBody}>You may not select more than 4 predicates.</Toast.Body>
+              <Toast.Body bsPrefix={styles.toastBody}>You may not select more than 4 predicates !</Toast.Body>
             </Toast>
           </div>
 
@@ -159,13 +159,13 @@ const FormInput = () => {
                 <Spinner animation="border" size="sm" variant="light" as="span" role="status"></Spinner>
                 <Toast.Header bsPrefix={styles.toastHeader}>Loading data...</Toast.Header>
               </div>
-              <Toast.Body bsPrefix={styles.toastBody}>Please wait patiently - this could take a while.</Toast.Body>
+              <Toast.Body bsPrefix={styles.toastBody}>Please wait patiently - this could take a while</Toast.Body>
             </Toast>
           </div>
 
           <div className={styles.toastWrapper}>
             <Toast bsPrefix={styles.toastSuccess} animation={true} autohide={true} delay={3000} onClose={() => {setShowSuccess(false)}} show={showSuccess}>
-              <Toast.Header bsPrefix={styles.toastHeader}>Success!</Toast.Header>
+              <Toast.Header bsPrefix={styles.toastHeader}>Success!!!</Toast.Header>
               <Toast.Body bsPrefix={styles.toastBody}>Data loaded. Please see the output for the results.</Toast.Body>
             </Toast>
           </div>
@@ -182,15 +182,15 @@ const FormInput = () => {
       <Form onSubmit={handleSubmit} className="mb-4">
         <Form.Row>
           <Form.Group as={Col} controlId="formPredicatesInput">
-            <Form.Label>Selected predicates</Form.Label>
+            <Form.Label style = {{fontSize : "20px"}}>Selected predicates :</Form.Label>
             <Form.Control value={showSelectedPredicates()} readOnly />
           </Form.Group>
         </Form.Row>
 
         <Form.Row>
           <Form.Group as={Col} controlId="formPredicates">
-            <Form.Label>Predicates</Form.Label>
-            <Form.Text>
+            <Form.Label style = {{fontSize : "20px"}}>Predicates :</Form.Label>
+            <Form.Text style = {{fontSize : "15px"}}>
               Select up to 4 predicates that are limited by a range condition in a WHERE clause in the query
               (no equality conditions). For example, with a condition like 
               <i><b> WHERE l_extendedprice &gt; 100</b></i>, select <i><b>l_extendedprice</b></i> as the predicate.
@@ -306,10 +306,9 @@ const FormInput = () => {
 
           <Form.Group as={Col} controlId="formInput">
             <Form.Group controlId="formQuery">
-                <Form.Label>SQL Query</Form.Label>
-                <Form.Text>
-                  Please input your SQL query. Ensure that the query is properly formatted and is a valid SQL query.
-                  You can type your query across mulitple lines using the 'Enter' key. We do not support deep nesting of queries at the moment, but one level nesting is fine.
+                <Form.Label style = {{fontSize : "20px"}}>SQL Query :</Form.Label>
+                <Form.Text style = {{fontSize : "15px"}}>
+                  Please input a valid and well formatted SQL query
                 </Form.Text>
                 <br />
                 <Form.Control as="textarea" rows="19" placeholder="Input SQL query..." onChange={event => setInput({...input, "query": event.target.value})} value={input.query} />

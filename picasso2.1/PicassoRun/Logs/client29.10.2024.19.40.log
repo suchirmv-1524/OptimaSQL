@@ -1,4 +1,0 @@
-ServerName localhost Port 3306
-Exception: java.net.SocketException: Broken pipe
-Exception: java.net.SocketException: Broken pipe
-Exception: java.net.SocketException: Broken pipe

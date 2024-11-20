@@ -1,5 +1,5 @@
 {
-  "name": "sql-query-optimizer",
+  "name": "database-and-query-optimizer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

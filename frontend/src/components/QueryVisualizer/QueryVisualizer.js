@@ -73,7 +73,7 @@ const QueryVisualizer = (props) => {
       </DagreGraph >
     </div> :
     <div className={styles.graphLoadingWrapper}>
-      <span>No data to show</span>
+      <span>No data to show :(</span>
     </div>
   )
 }
